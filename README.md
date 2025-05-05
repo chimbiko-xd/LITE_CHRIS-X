@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Chimbiko-xd/Lite_chris-x">
-    <img alt="Lite_Chris-X docs" height="350" src="https://i.ibb.co/nqsRcKDB/Xploader5.jpg">
+    <img alt="Lite_Chris-X docs" height="350" src="https://i.ibb.co/nqsBcMDG/Xploader5.jpg">
   </a>
 </p>
     
