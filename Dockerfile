@@ -1,25 +1,16 @@
-FROM node:lts
+# Use Node.js LTS as base image
+FROM node:18-alpine
 
-# Install dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
-
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy package files
+# Copy package files and install dependencies
 COPY package*.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm install && npm cache clean --force
-
-# Copy application code
+# Copy the rest of the bot files
 COPY . .
 
-# Expose port
-EXPOSE 3000
+# Start the bot
+CMD ["node", "index.js"]
 
-# Set environment
-ENV NODE_ENV production
-
-# Run command
-CMD ["npm", "run", "start"]
