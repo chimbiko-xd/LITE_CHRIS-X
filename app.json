@@ -1,0 +1,24 @@
+
+{
+    "name": "Lite_Chris-X ",
+    "description": "Web Session Generator",
+    "logo": "https://files.catbox.moe/74hsb4.png",
+    "repository": "https://github.com/Chimbiko-xd/Lite_Chris-X",
+    "keywords": ["Chris-Xd"],
+    "success_url": "/", 
+    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
+    "env": {      
+      "PORT": {
+        "description": "Port for web app.4000,5000,3000... any!",
+        "value": "5000",
+        "required": false 
+      },
+      "MESSAGE": {
+        "description": "Just Leave This Blank",
+        "value": "",
+        "required": false 
+      }
+    }   
+
+      }
+        
